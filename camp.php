@@ -17,9 +17,8 @@
 
       </div>
     </div>
-    <form action="./updateUser.php" method="POST">
-      <input type="submit" name="addGold" id="addGold" value="Add Gold" />
-    </form>
+    <a href="./updateUser.php?gold=2">Add 2 Gold</a>
+    <a href="./updateUser.php?points=10">Add 10 Points</a>
     <button>Shoppes</button>
   </div>
 </main>
