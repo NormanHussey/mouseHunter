@@ -14,15 +14,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <?php include "./templates/header.php" ?>
-
+  <?php include "./templates/head.php" ?>
+  <?php include './templates/nav.php' ?>
     <main>
-      <?php if ($user['name'] === 'Guest') { ?>
-        <a href="./newUser.php">Sign Up</a>
-        <a href="./login.php">Login</a>
-      <?php } else { ?>
-        <a href="./logout.php">Logout</a>
-      <?php } ?>
+
     </main>
 
   <?php include "./templates/footer.php" ?>

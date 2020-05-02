@@ -16,6 +16,3 @@
   <title>Mouse Hunter</title>
 </head>
 <body>
-  <header>
-    <h1>Hello, <?= $user['name'] ?>. Welcome to Mouse Hunter!</h1>
-  </header>

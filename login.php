@@ -24,7 +24,8 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-  <?php include './templates/header.php' ?>
+  <?php include "./templates/head.php" ?>
+  <?php include './templates/nav.php' ?>
 
   <main>
     <h2>Login:</h2>
