@@ -1,9 +1,6 @@
 <header>
   <nav>
     <ul>
-      <li>
-        <p>Hello, <?= $user['name'] ?>.</p>
-      </li>
       <?php if ($user['name'] === 'Guest') { ?>
         <li>
           <a href="./newUser.php">Sign Up</a>
@@ -12,6 +9,9 @@
           <a href="./login.php">Login</a>
         </li>
       <?php } else { ?>
+        <li>
+          <p>Hello, <?= $user['name'] ?>.</p>
+        </li>
         <li>
           <a href="./logout.php">Logout</a>
         </li>

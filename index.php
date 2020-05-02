@@ -16,9 +16,14 @@
 <html lang="en">
   <?php include "./templates/head.php" ?>
   <?php include './templates/nav.php' ?>
-    <main>
 
-    </main>
+  <main>
+    <?php if($user['name'] !== 'Guest'): ?>
+      <a href="./camp.php">Play!</a>
+    <?php else : ?>
+      <p>Please login to play</p>
+    <?php endif ?>
+  </main>
 
   <?php include "./templates/footer.php" ?>
 </body>
