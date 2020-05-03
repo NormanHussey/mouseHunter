@@ -1,6 +1,7 @@
 <?php
 
   require_once './components/connect.php';
+  // session_start();
 
   if (isset($_POST['username']) && isset($_POST['password'])) {
 
@@ -13,7 +14,6 @@
     $passwordHash = $user['password'];
 
     if (password_verify($_POST['password'], $passwordHash)) {
-      session_start();
       $_SESSION['user'] = $user;
       header('Location: index.php');
     } else {

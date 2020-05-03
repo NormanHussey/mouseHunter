@@ -2,6 +2,8 @@
 
   require_once './components/connect.php';
 
+  // session_start();
+
   $username = '';
 
   if (isset($_POST['username']) && isset($_POST['password'])) {
@@ -35,7 +37,6 @@
       $sql->execute();
   
       $user = $sql->fetchALL(PDO::FETCH_ASSOC)['0'];
-      session_start();
       $_SESSION['user'] = $user;
   
       header("Location: index.php");

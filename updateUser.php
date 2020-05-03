@@ -1,7 +1,7 @@
 <?php
 
   require './components/connect.php';
-  session_start();
+  // session_start();
   $user = $_SESSION['user'];
 
   if(isset($_GET['gold'])) {
